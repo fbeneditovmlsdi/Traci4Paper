@@ -1,13 +1,15 @@
 <additionals>
-    <route id="routeshuttle0" color="1,1,0" edges="327676501#0 327676501#1 327676501#2 433033617#0 433033617#1 433033617#2 433033617#3 343294482#3 343294482#4 343294482#5 327676481#3 327676481#4 327676512#0"/>
-    <rerouter id="rerouter_0" edges="327676501#0">	
+    <route id="routeshuttle0" color="1,1,0" edges="327676501#0 327676501#1 327676501#2 433033617#0 433033617#1 327676613#0 327676613#1 327676613#2 327676516#3 327676516#4 327676516#5 327676516#6 327676682 327676687#0 327676687#1 327676687#2 327676687#3 327676516#1 327676569#0 327676569#1 327676569#2 327676569#3 327676569#4 -433033617#0 327676478#0 327676478#1"/>
+	<route id="routebk2start" color="1,1,0" edges="327676478#1 327676512#2 327676512#3 327676512#4 327676512#5 327676512#0 327676501#0"/>
+
+	<rerouter id="rerouter_0" edges="327676501#0">
 		<interval end="1e9">
 		   <routeProbReroute id="routeshuttle0"/>
 		</interval>
 	</rerouter>
-    <rerouter id="rerouter_1" edges="327676512#0">
+    <rerouter id="rerouter_1" edges="327676478#1">
 		<interval end="1e9">
-		   <destProbReroute id="327676501#0"/>
+		   <routeProbReroute id="routebk2start"/>
 		</interval>
 	</rerouter>
 </additionals>
